@@ -1,0 +1,12 @@
+<section>
+  <p >anime-pictures works!</p>
+  @if (animePictures$ | async; as resultObject) {
+    <div [ngClass]="'anime-pictures'">
+      @for(item of resultObject.results; track item.source_url) {
+        <div [class]="'anime-pictures__item'">
+          <img [src]="item.url" [alt]="item.artist_name">
+        </div>
+      }
+    </div>
+  }
+</section>

@@ -1,0 +1,29 @@
+.anime-pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 120px;
+  max-width: 100vw;
+}
+
+.anime-pictures__item {
+  margin: 10px;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.anime-pictures__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
