@@ -1,0 +1,29 @@
+.anime-categories {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 120px 10px 120px;
+}
+
+.anime-categories__item {
+  padding: 10px 30px;
+  color: black;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.anime-categories__item:hover {
+  background-color: orange;
+  color: #ececec;
+  cursor: pointer;
+}
+
+.anime-categories__item a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  font-size: 0.9rem;
+}

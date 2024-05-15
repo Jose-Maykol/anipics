@@ -15,4 +15,8 @@ export class AnimeService {
   getList(): Observable<ListAnimePicture> {
     return this.http.get<ListAnimePicture>('https://nekos.best/api/v2/waifu?amount=20');
   }
+
+  getListByCategory(category: string): Observable<ListAnimePicture> {
+    return this.http.get<ListAnimePicture>(`https://nekos.best/api/v2/${category}?amount=20`);
+  }
 }

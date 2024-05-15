@@ -1,0 +1,9 @@
+<section class="anime-categories">
+  @for(category of animeCategories; track category.id) {
+    <div class="anime-categories__item">
+      <a [routerLink]="['/', category.name]">
+        {{ category.name }}
+      </a>
+    </div>
+  }
+</section>
