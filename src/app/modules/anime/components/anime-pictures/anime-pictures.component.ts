@@ -3,13 +3,15 @@ import { ListAnimePicture } from '../../../../core/models/anime';
 import { Observable } from 'rxjs';
 import { AnimeService } from '../../../../core/services/anime.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
+import { NgxMasonryModule } from 'ngx-masonry';
 
 @Component({
   selector: 'app-anime-pictures',
   standalone: true,
   imports: [
     AsyncPipe,
-    CommonModule
+    CommonModule,
+    NgxMasonryModule
   ],
   templateUrl: './anime-pictures.component.html',
   styleUrl: './anime-pictures.component.css'
